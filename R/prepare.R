@@ -135,7 +135,7 @@ GDCprepare <- function(
     }
 
     cases <- ifelse(
-        grepl("TCGA|TARGET|CGCI-HTMCP-CC",query$results[[1]]$project %>% unlist()),
+        grepl("TCGA|TARGET|CPTAC|CGCI-HTMCP-CC",query$results[[1]]$project %>% unlist()),
         query$results[[1]]$cases,
         query$results[[1]]$sample.submitter_id
     )
